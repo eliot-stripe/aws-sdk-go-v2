@@ -49,7 +49,7 @@ func resolveDefaultEndpointConfiguration(o *Options) {
 // EndpointResolverFromURL returns an EndpointResolver configured using the
 // provided endpoint url. By default, the resolved endpoint resolver uses the
 // client region as signing region, and the endpoint source is set to
-// EndpointSourceCustom.You can provide functional options to configure endpoint
+// EndpointSourceCustom. You can provide functional options to configure endpoint
 // values for the resolved endpoint.
 func EndpointResolverFromURL(url string, optFns ...func(*aws.Endpoint)) EndpointResolver {
 	e := aws.Endpoint{URL: url, Source: aws.EndpointSourceCustom}
